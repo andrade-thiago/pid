@@ -6,8 +6,10 @@
 
 [[Configuração de um Projeto|Configuração de um Projeto]]
 
-[[Automatização da configuração|Automatização da configuração]]
-
 [[Integração com Gerenciador do FME|Integração Gerenciador FME]]
+
+[[Uso do plugin Ferramentas de Produção|Uso do plugin Ferramentas de Produção]]
+
+[[Automatização da configuração|Automatização da configuração]]
 
 [[Personalização do Projeto QGIS|Personalização do Projeto QGIS]]
