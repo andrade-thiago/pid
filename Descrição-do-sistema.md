@@ -41,19 +41,35 @@ Os tipos de restrição implementados no sistema, sendo eles _Operadores distint
 
 ## unidade_trabalho
 
+Camada espacial
+Geográfico
+etapas de uma subfase são realizadas
+lote
+banco de dados
+
 ## lote
 
 ## banco_dados
 
 ## insumo
 
+Camada espacial para cadastramento dos insumos utilizados na produção. Contém os atributos _nome_, _caminho_ (onde a localização é armazenada), _epsg_ (sistema de coordenadas do insumo). Insumos são de um determinado _tipo insumo_.
+
 ## tipo_insumo
+
+Classe utilizada para categorizar insumos, de modo a facilitar a associação pelo gerente de produção.
 
 ## insumo_unidade_trabalho
 
+Associação entre unidades de trabalho e insumos. Quando um insumo é associado a unidade de trabalho ele passa a ser distribuído para o operador.
+
 ## execucao_etapa
 
+Classe onde é armazenada as informações de execução de uma etapa. Contém informações de _data de ínicio_, _data fim_ e _operador_ (classe _usuario_). Uma execucao_etapa é associada a uma única unidade de trabalho, e a uma única etapa.  As execucao_etapa possuem um determinado _tipo situacao_.
+
 ## tipo_situacao
+
+Os tipos possíveis de situação de uma execucao_etapa, sendo eles _Não iniciada_, _Em execução_, _Pausada_, _Finalizada_, _Não será executada_.
 
 ## usuario
 
