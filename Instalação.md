@@ -47,3 +47,11 @@ Os operadores deverão utilizar o plugin [Ferramentas de Produção](https://git
 O plugin habilita um único botão no QGIS, que ao usuário clicar abre a tela do login. Basta o usuário preencher o endereço do serviço do SAP, seu usuário e senha do banco de dados PostgreSQL.
 
 [[/images/login.PNG|Login]]
+
+# Projeto de Configuração QGIS
+
+Após configurado o SAP, ao executar o comando `npm run project` é criado na pasta do SAP o arquivo _sap_config.qgs_, que é um projeto para QGIS 3.4 utilizado como interface de configuração da SAP.
+
+[[/images/sap_config.PNG|SAP CONFIG]]
+
+Na seção [[Personalização do Projeto QGIS|Personalização do Projeto QGIS]] é abordado como personalizar este projeto do QGIS de modo a realizar o acompanhamento da produção.
