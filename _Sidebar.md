@@ -6,7 +6,7 @@
 
 [[Configuração de um Projeto|Configuração de um Projeto]]
 
-[[Integração com Gerenciador do FME|Integração Gerenciador FME]]
+[[Integração com FME Manager|Integração FME Manager]]
 
 [[Uso do plugin Ferramentas de Produção|Uso do plugin Ferramentas de Produção]]
 
