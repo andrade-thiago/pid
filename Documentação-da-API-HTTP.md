@@ -12,4 +12,4 @@ Após executar o comando a documentação pode ser acessada no navegador no ende
 
 # Diagrama de Classes
 
-[[/images/diagrama_sap.PNG|Diagrama_Classes]]
+[[[/images/diagrama_sap.PNG|Diagrama_Classes]]](/images/diagrama_sap.PNG)
