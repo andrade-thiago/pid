@@ -8,7 +8,7 @@ A produção deve ser organizada em projetos. O projeto possui o atributo _nome_
 
 ## fase
 
-Um projeto é composto de uma ou mais fases de produção. As fases são de um determinado _tipo fase_. As fases são ordenadas dentro de um projeto.
+Um projeto é composto de uma ou mais fases de produção. As fases são de um determinado _tipo_fase_. As fases são ordenadas dentro de um projeto.
 
 ## tipo_fase
 
@@ -16,16 +16,16 @@ Os _tipo_fase_ são as fases padrão da produção cartográfica da Diretoria de
 
 ## subfase
 
-As subfases são os processos que os Centros de Geoinformação realizam de fato, estando em uma granularidade maior que a fase. Exemplos de subfase são: _Digitalização de Transportes_, _Digitalização de Edificações_, etc.
+As subfases são os processos que os Centros de Geoinformação realizam de fato, estando em uma granularidade maior que a fase. Exemplos de subfase são: _Digitalização_de_Transportes_, _Digitalização_de_Edificações_, etc.
 Uma subfase pertence a fase. As subfases podem ocorrer em paralelo dentro de uma fase.
 
 ## etapa
 
-As subfases são executadas através de uma ou mais etapas. Etapas são as operações básicas a serem realizadas pelos usuários, como revisão, correção, execução. As etapas são de um determinado _tipo etapa_. As etapas são ordenadas dentro de uma subfase.
+As subfases são executadas através de uma ou mais etapas. Etapas são as operações básicas a serem realizadas pelos usuários, como revisão, correção, execução. As etapas são de um determinado _tipo_etapa_. As etapas são ordenadas dentro de uma subfase.
 
 ## tipo_etapa
 
-Exemplos de tipo_etapa são: _Execução_, _Revisão 1_, _Correção 1_, _Revisão 2_, etc. Tipo_etapas são de um determinado _tipo processo_.
+Exemplos de tipo_etapa são: _Execução_, _Revisão 1_, _Correção 1_, _Revisão 2_, etc. Tipo_etapas são de um determinado _tipo_processo_.
 
 ## tipo_processo
 
@@ -41,15 +41,15 @@ Os tipos de restrição implementados no sistema, sendo eles _Operadores distint
 
 ## unidade_trabalho
 
-Camada espacial
-Geográfico
-etapas de uma subfase são realizadas
-lote
-banco de dados
+Camada espacial que define onde um usuário irá executar sua atividade. Tal camada permite que o projeto seja subdividido geograficamente em polígonos arbitrários (não necessariamente MI). Unidades de trabalho possuem _nome_, _epsg_. Unidades de trabalho podem estar disponíveis ou não (atributo _disponivel), no sentido que unidades de trabalho não disponíveis não são distribuídas pelo sistema. Unidades de trabalho são vinculadas a um banco de dados de produção e a uma única subfase. Elas também pertencem obrigatoriamente a um lote. Unidades de trabalho possuem uma prioridade dentro de uma subfase (e um lote)
 
 ## lote
 
+Lotes organizam a prioridade em que unidades de trabalho são executadas. Eles possuem atributo _nome_ e _prioridade_.
+
 ## banco_dados
+
+Definição do banco de dados de produção (onde a manipulação de geometria será feita). Possui atributo _nome_, _servidor_, _porta_.
 
 ## insumo
 
@@ -67,17 +67,31 @@ Associação entre unidades de trabalho e insumos. Quando um insumo é associado
 
 Classe onde é armazenada as informações de execução de uma etapa. Contém informações de _data de ínicio_, _data fim_ e _operador_ (classe _usuario_). Uma execucao_etapa é associada a uma única unidade de trabalho, e a uma única etapa.  As execucao_etapa possuem um determinado _tipo situacao_.
 
+As execucao_etapa que são distribuídas aos operadores, baseado nas propriedades dos operadores, unidade de trabalho e das etapas. Sendo assim elas devem ser criadas para que o sistema as distribua.
+
 ## tipo_situacao
 
 Os tipos possíveis de situação de uma execucao_etapa, sendo eles _Não iniciada_, _Em execução_, _Pausada_, _Finalizada_, _Não será executada_.
 
 ## usuario
 
-## tipo_perfil_sistema
+Usuario que executa as atividades do SAP. Possui atributos _nome_, _nome_guerra_, _login_. Possui um turno de trabalho (_tipo_turno_id_) e um posto ou graduação (_tipo_posto_grad_id_).
+
+O usuário deve existir com o mesmo login no PostgreSQL do SAP (e do banco de produção, caso seja distinto).
+
+O usuário deve ter permissão no banco de dados da atividade que irá receber.
 
 ## tipo-posto_grad
 
+Posto ou graduação do usuário. Utilizado somente para facilitar a identificação.
+
 ## tipo_turno
+
+Turno que o usuário trabalha (_manhã_, _tarde_, ou _integral_). Utilizado como informação para o gerente de produção, e no sistema no caso da restrição _Operadores no mesmo turno_.
+
+## tipo_perfil_sistema
+
+Perfil do usuário no sistema. Atualmente utilizado apenas para habilitar certos usuários a configurar o menu de classificação (necessitando perfil superior a _operador_).
 
 ## perfil producao
 
