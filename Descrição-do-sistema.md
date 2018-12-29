@@ -123,4 +123,11 @@ Classe utilizada para integrar o FME Manager com o SAP. Deve ser cadastrado para
 
 # Funcionamento da Fila
 
+A distribuição automática de atividades é baseada em uma fila dinamica que é calculada no momento que o usuário requisita uma nova atividade.
+
+Perfil de produção associado ao operador
+Prioridade do Lote
+Prioridade da Unidade de Trabalho
+
+
 ## Casos especiais
