@@ -101,11 +101,25 @@ Os tipos possíveis de situação de uma execucao_etapa, sendo eles _Não inicia
 
 ## camada
 
+Classe que guarda o nome das camadas do banco de dados geográficos de trabalho, por exemplo _constr_edificacao_a_. Não é necessário informar o schema.
+
+Não é fixado os nomes das camadas da ET-EDGV de modo a dar flexibilidade ao uso de outras modelagens, como a EDGV Pro.
+
 ## perfil_rotina
+
+Classe utilizada para disponibilizar rotinas python para uma determinada etapa. Deve ser informado o tipo de rotina (_tipo_rotina_), a camada em que a rotina será executada (_camada_id_), a camada que os erros serão armazenados (_camada_apontamento_id_), e os parâmetros no formato JSON caso necessário (_parametros_).
+
+**Esta classe será remodelada de forma a se integrar com o DSGTools 4**
 
 ## tipo_rotina
 
+Lista de rotinas que atualmente podem ser disponibilizadas. Atualmente são as seguintes rotinas _outOfBoundsAngles_, _invalidGeometry_ e _notSimpleGeometry_.
+
 ## perfil_fme
+
+Classe utilizada para integrar o FME Manager com o SAP. Deve ser cadastrado para a etapa desejada o servidor do FME Manager (com porta) e qual categoria deve ser disponibilizada naquela etapa.
+
+**Esta classe será remodelada de forma a se integrar com perfil_rotina**
 
 # Funcionamento da Fila
 
