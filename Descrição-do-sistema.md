@@ -129,17 +129,35 @@ Não respeita restricao_etapa, perfil_producao e ordenamento de etapas.
 
 ## requisito_finalizacao
 
-Utilizados para criar um checklist de ações a serem realizadas durante uma execucao_etapa. Tal checklist é exibido no plugin Ferramentas de Produção, e somente permite a finalização da atividade se todo o checklist for marcado.
-
-[Uso-do-plugin-Ferramentas-de-Produção](#finalizando-uma-atividade)
+Utilizados para criar um checklist de ações a serem realizadas durante uma etapa. Tal checklist é exibido no plugin Ferramentas de Produção, e somente permite a finalização da atividade se todo o checklist for marcado.
 
 ## perfil_estilo
 
+Permite a configuração dos estilos disponíveis para uma etapa. Possui o atributo _nome_, onde é informado o nome do estilo, e deve ser associado a uma etapa.
+
+O estilo deve estar cadastrado no banco de dados (tabela _layer_styles_) e deve seguir o padrão de nomenclatura {{Nome do estilo}} | {{Nome da classe}}, por exemplo reambulacao|constr_edificacao_a
+
+Múltiplos estilos podem estar associado a uma etapa.
+
 ## perfil_regras
+
+Permite a configuração de regras de atributação para uma etapa. Possui o atributo _nome_, onde é informado o nome do grupo de regras, e deve ser associado a uma etapa.
+
+As regras devem estar cadastradas no banco de dados (tabela _layer_rules_).
+
+Múltiplos grupos de regras podem estar associado a uma etapa.
 
 ## perfil_menu
 
+Permite a configuração de menus de atributação para uma etapa. Possui o atributo _nome_, onde é informado o nome do menu, e deve ser associado a uma etapa.
+
+Os menus devem estar cadastradas no banco de dados (tabela _menu_profile_).
+
+Múltiplos menus podem estar associado a uma etapa.
+
 ## perfil_propriedades_camada
+
+Associa uma camada do banco de dados de produção a uma etapa. É utilizado para definir que camadas um usuário tem acesso durante a execução de uma etapa.
 
 ## camada
 
@@ -165,11 +183,16 @@ Classe utilizada para integrar o FME Manager com o SAP. Deve ser cadastrado para
 
 # Funcionamento da Fila
 
-A distribuição automática de atividades é baseada em uma fila dinamica que é calculada no momento que o usuário requisita uma nova atividade.
+A distribuição automática de atividades é baseada em uma fila dinamica que é calculada no momento que o usuário requisita uma nova atividade. Seguindo a ordem de prioridade dos lotes, para cada etapa do perfil de produção do operador é verificado se existe alguma execucao_etapa disponível (não inicada) para aquela etapa e lote. Caso tenha é distribuída a execucao_etapa com a unidade de trabalho de maior prioridade para o operador, caso contrário é verificado a próxima etapa do perfil de produção.
 
-Perfil de produção associado ao operador
-Prioridade do Lote
-Prioridade da Unidade de Trabalho
+O procedimento se repete em todo o perfil de produção e todos os lotes caso não seja encontrado execucao_etapas disponíveis. Caso não tenha nenhuma disponível o plugin Ferramentas_Producao avisará o usuário para entrar em contato com Gerente de Produção.
 
+A fila respeita a ordem das etapas em uma subfase, e a restricao_etapa.
 
 ## Casos especiais
+
+Utilizando as classes _fila_prioritaria_ e fila_prioritaria_grupo_ pode-se distribuir atividades foram da fila padrão de distribuição, inclusive ignorando a ordem das etapas em uma subfase e a restricao_etapa.
+
+Em geral _fila_prioritaria_ é utilizada para distribuir uma execucao_etapa específica para um operador específico, que normalmente ocorre quando uma região é complicada e se deseja que um operador mais experiente a execute.
+
+Em geral _fila_prioritaria_grupo_ é utilizada para distribuir execucao_etapa de operadores de férias, normalmente correção, que não seriam distribuídas pelo sistema devido a restricao_etapa.
