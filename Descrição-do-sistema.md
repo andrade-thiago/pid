@@ -1,5 +1,7 @@
 # Descrição Geral
 
+O SAP é composto por três partes, um serviço HTTP (este repositório) desenvolvido em Node.Js, um plugin QGIS utilizado como cliente ([Ferramentas de Produção](https://github.com/1cgeo/Ferramentas_Producao)), e um projeto do QGIS utilizado para configurar o SAP.
+
 # Descrição das Classes
 
 ## projeto
