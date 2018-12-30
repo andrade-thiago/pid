@@ -95,15 +95,43 @@ Perfil do usuário no sistema. Atualmente utilizado apenas para habilitar certos
 
 ## perfil producao
 
+Cria um perfil de produção. Possui o atributo _nome_.
+
 ## perfil_producao_etapa
+
+Define a prioridade de etapas de um perfil de produção.  Deve ser definida uma etapa (_etapa_id_) e a prioridade correspondente a esta etapa. É associado a um _perfil_producao_ (_perfil_producao_id).
+
+Para um perfil de produção deve-se criar quantos perfil_producao_etapa quanto necessário para definir as possíveis etapas que o perfil de produção pode executar. O ordenamento dessas etapas influencia na fila de produção.
 
 ## perfil_producao_operador
 
+Associa um perfil_producao a um operador (_usuario_).
+
 ## fila_prioritaria
+
+Classe utilizada para casos especiais de distribuição de atividades. Ela associa um operador (_usuario_) a uma _execucao_etapa_ com uma certa prioridade. Sempre que existir uma atividade na fila prioritária de um operador esta será distribuída em detrimento da fila padrão.
+
+A prioridade permite ordenar multiplas _execucao_etapa_ a um operador.
+
+Em geral deve-se utilizar a fila padrão, somente utilizar fila_prioritaria quando por algum motivo se exigir que uma determinada pessoa execute uma determinada tarefa (de forma pontual).
+
+Não respeita restricao_etapa, perfil_producao e ordenamento de etapas.
 
 ## fila_prioritaria_grupo
 
+Classe utilizada para casos especiais de distribuição de atividades. Ela associa um _perfil_producao_ a uma _execucao_etapa_ com uma certa prioridade. Sempre que existir uma atividade na fila prioritária de perfil de produção esta será distribuída para qualquer usuário daquele perfil em detrimento da fila padrão.
+
+A prioridade permite ordenar multiplas _execucao_etapa_ a um perfil de produção.
+
+Em geral deve-se utilizar a fila padrão, somente utilizar fila_prioritaria_grupo quando por algum motivo existirem atividades que não podem ser executadas pelo operador original (por estar de férias por exemplo) e qualquer operador de um determinado perfil puder executar aquela tarefa.
+
+Não respeita restricao_etapa, perfil_producao e ordenamento de etapas.
+
 ## requisito_finalizacao
+
+Utilizados para criar um checklist de ações a serem realizadas durante uma execucao_etapa. Tal checklist é exibido no plugin Ferramentas de Produção, e somente permite a finalização da atividade se todo o checklist for marcado.
+
+[[Finalizando uma atividade|Uso do plugin Ferramentas de Produção]]
 
 ## perfil_estilo
 
