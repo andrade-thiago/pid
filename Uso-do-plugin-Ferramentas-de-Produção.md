@@ -20,11 +20,11 @@ Após finalizar uma atividade o sistema também perguntará se o usuário deseja
 
 # Carregando camadas
 
-Após logar (e com um atividade) o operador terá acesso a uma série de abas. A primeira aba é _Carregar Camadas_ onde será exposto quais camadas o usuário está habilitado a carregar. Para carrega-las basta o usuário clicar no botão _Carregar_.
+Após logar (e com uma atividade) o operador terá acesso a uma série de abas. A primeira aba é _Carregar Camadas_ onde será exposto quais camadas o usuário está habilitado a carregar. Para carrega-las basta o usuário clicar no botão _Carregar_.
 
 [[/images/carrega_camada.PNG|Carrega camadas]]
 
-Caso tenham estilos definidos o usuário também pode escolher o estilo que se deseja carregar as camadas no menu acima do _Carregar Camadas_.
+Caso tenham estilos definidos, o usuário também pode escolher o estilo que se deseja carregar as camadas no menu acima do _Carregar Camadas_.
 
 As camadas são carregadas organizadas alfabeticamente e por geometria. Em todas as camadas é aplicado um filtro espacial conforme a unidade de trabalho correspondente. Também é criada uma camada virtual de moldura.
 
@@ -40,7 +40,17 @@ O usuário deve atentar para utilizar pastas sem caracteres especiais ou espaço
 
 # Executando Rotinas
 
-# Regras de Atributação
+Na aba rotinas são acessadas as rotinas do FME e as rotinas do _perfil_rotina_, sendo opaco para usuário qual o tipo de rotina está sendo executada. Os parâmetros também são preenchidos automaticamente pelo plugin.
+
+Após a execução da rotina aparecerá uma mensagem informando se ela foi realizada com sucesso.
+
+# Regras de Atributação e Estatística de Regras
+
+Caso tenha regras de atributação definidas, ao carregar as camadas podem ser carregadas um ou mais conjuntos de regras de atributação. Tais regras serão avaliadas na tabela de atributos e ao formulário de feições, atribuindo cores a atributos que falharam uma determinada regra.
+
+A aba estatística de regras permite que o usuário veja um sumário de que camadas possuem feições que falharam algum grupo de regras de atributação.
+
+Caso o usuário deseje remover as regras basta carregar novamente as camadas sem selecionar as regras disponíveis (não é necessário remover as camadas)
 
 # Atalhos
 
@@ -49,6 +59,10 @@ Na aba _Atalhos_ o usuário pode verificar os atalhos que o Ferramentas de Produ
 [[/images/atalhos.PNG|Atalhos]]
 
 # Menu de classificação
+
+Caso tenham menus de classificação definidos eles podem ser acessados a partir dos botões abaixo dos estilos. O botão abrirá o menu com a configuração disponível.
+
+Na aba Configuração do menu, usuários com permissão (perfil sistema superior a operador) podem alterar e criar novos menus.
 
 # Finalizando uma atividade
 
@@ -63,3 +77,17 @@ Caso a atividade tenha requisitos cadastrados estes aparecerão como um checklis
 Ao clicar em _Finalizar Atividade_ uma janela de confirmação aparecerá para o usuário. Nela o usuário deve digitar o login de forma a confirmar a finalização da atividade.
 
 [[/images/finaliza_atividade.PNG|Confirmação de finalização]]
+
+# Outras funcionalidades
+
+## Filtro espacial
+
+O usuário somente pode acessar geometrias que intersectem com sua área de trabalho.
+
+## Bloqueio espacial
+
+O usuário não consegue criar feições fora de sua área de trabalho.
+
+## Aviso para salvar
+
+A cada 5 minutos, caso alguma camada tenha feições não salvas aparecerá um aviso relembrando o usuário de salvar.
