@@ -131,7 +131,7 @@ Não respeita restricao_etapa, perfil_producao e ordenamento de etapas.
 
 Utilizados para criar um checklist de ações a serem realizadas durante uma execucao_etapa. Tal checklist é exibido no plugin Ferramentas de Produção, e somente permite a finalização da atividade se todo o checklist for marcado.
 
-[[Finalizando uma atividade|Uso-do-plugin-Ferramentas-de-Produção]](#finalizando-uma-atividade)
+[Uso-do-plugin-Ferramentas-de-Produção](#finalizando-uma-atividade)
 
 ## perfil_estilo
 
