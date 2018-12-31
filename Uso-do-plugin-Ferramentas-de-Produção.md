@@ -42,13 +42,19 @@ O usuário deve atentar para utilizar pastas sem caracteres especiais ou espaço
 
 Na aba rotinas são acessadas as rotinas do FME e as rotinas do _perfil_rotina_, sendo opaco para usuário qual o tipo de rotina está sendo executada. Os parâmetros também são preenchidos automaticamente pelo plugin.
 
+[[/images/rotinas.PNG|rotinas]]
+
 Após a execução da rotina aparecerá uma mensagem informando se ela foi realizada com sucesso.
 
 # Regras de Atributação e Estatística de Regras
 
 Caso tenha regras de atributação definidas, ao carregar as camadas podem ser carregadas um ou mais conjuntos de regras de atributação. Tais regras serão avaliadas na tabela de atributos e ao formulário de feições, atribuindo cores a atributos que falharam uma determinada regra.
 
+[[/images/tipo_regras.PNG|tipo_regras]]
+
 A aba estatística de regras permite que o usuário veja um sumário de que camadas possuem feições que falharam algum grupo de regras de atributação.
+
+[[/images/estatisticas_regras.PNG|estatisticas_regras]]
 
 Caso o usuário deseje remover as regras basta carregar novamente as camadas sem selecionar as regras disponíveis (não é necessário remover as camadas)
 
@@ -62,7 +68,11 @@ Na aba _Atalhos_ o usuário pode verificar os atalhos que o Ferramentas de Produ
 
 Caso tenham menus de classificação definidos eles podem ser acessados a partir dos botões abaixo dos estilos. O botão abrirá o menu com a configuração disponível.
 
+[[/images/menu_classificacao.PNG|menu_classificacao]]
+
 Na aba Configuração do menu, usuários com permissão (perfil sistema superior a operador) podem alterar e criar novos menus.
+
+[[/images/edicao_menu.PNG|edicao_menu]]
 
 # Finalizando uma atividade
 
@@ -72,11 +82,11 @@ Uma vez que o usuário completou a atividade ele pode finalizar na tela principa
 
 Caso a atividade tenha requisitos cadastrados estes aparecerão como um checklist que o usuário deve marcar antes de finalizar a atividade.
 
-[[/images/atividade_1.PNG|Finaliza atividade 1]]
+[[/images/atividade_2.PNG|Finaliza atividade 2]]
 
 Ao clicar em _Finalizar Atividade_ uma janela de confirmação aparecerá para o usuário. Nela o usuário deve digitar o login de forma a confirmar a finalização da atividade.
 
-[[/images/finaliza_atividade.PNG|Confirmação de finalização]]
+[[/images/finalizacao_atividade.PNG|Confirmação de finalização]]
 
 # Outras funcionalidades
 
