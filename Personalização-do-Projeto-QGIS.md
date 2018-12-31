@@ -40,18 +40,14 @@ Em _Banco de Dados_ > _Gerenciador BD_ pode se utilizar _Janela SQL_ para execut
 
 A SQL abaixo retorna informações sobre as atividades em execução.
 
-`SELECT ee.unidade_trabalho_id, ut.nome as unidade_trabalho_nome,
-ee.operador_atual as operador_atual_id,u.nome_guerra as operador_atual_nome, ee.etapa_id,
-su.nome as subfase_nome, et.nome as etapa_nome,
-ee.situacao as situacao_id, si.nome as situacao, ee.data_inicio
-from macrocontrole.execucao_etapa as ee
-INNER JOIN macrocontrole.unidade_trabalho as ut on ut.id = ee.unidade_trabalho_id
-INNER JOIN sdt.usuario as u on u.id = ee.operador_atual
-INNER JOIN macrocontrole.subfase_etapa as se on se.id = ee.subfase_etapa_id
-INNER JOIN macrocontrole.subfase as su on su.id = se.subfase_id
-INNER JOIN macrocontrole.etapa as et on et.id = se.etapa_id
-INNER JOIN macrocontrole.situacao as si on si.code = ee.situacao
-WHERE (ee.operador_atual is not null and ee.data_inicio is not null
-and ee.data_fim is null) or ee.situacao in  (2,3)
-order by ee.data_inicio asc`
+`SELECT ee.unidade_trabalho_id, ut.nome AS unidade_trabalho_nome, ee.operador_atual AS operador_atual_id,u.nome_guerra AS operador_atual_nome, ee.etapa_id, su.nome AS subfase_nome, et.nome AS etapa_nome, ee.situacao AS situacao_id, si.nome AS situacao, ee.data_inicio
+FROM macrocontrole.execucao_etapa AS ee
+INNER JOIN macrocontrole.unidade_trabalho AS ut ON ut.id = ee.unidade_trabalho_id
+INNER JOIN sdt.usuario AS u ON u.id = ee.operador_atual
+INNER JOIN macrocontrole.subfase_etapa AS se ON se.id = ee.subfase_etapa_id
+INNER JOIN macrocontrole.subfase AS su ON su.id = se.subfase_id
+INNER JOIN macrocontrole.etapa AS et ON et.id = se.etapa_id
+INNER JOIN macrocontrole.situacao AS si ON si.code = ee.situacao
+WHERE (ee.operador_atual is not null AND ee.data_inicio is not null AND ee.data_fim is null) OR ee.situacao in  (2,3)
+ORDER BY ee.data_inicio ASC`
 
