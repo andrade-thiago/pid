@@ -37,6 +37,8 @@ Os tipos de processo em uma produção cartográfica, sendo eles _Execução_, _
 
 Etapas podem ter restrição de distribuição baseado em quem executou uma etapa anterior. Um padrão comum na DSG é que que executou uma etapa não pode revisá-la, ou quem deve corrigir os apontamentos de uma revisão é o mesmo operador que executou a determinada subfase. Esse tipo de lógica pode ser inserida no sistema com restricao_etapa.
 
+*Existe uma associação com etapa_id anterior e etapa_id posterior, sempre etapas que ocorrem antes devem ser cadastradas em etapa_id anterior*
+
 ## tipo_restricao
 
 Os tipos de restrição implementados no sistema, sendo eles _Operadores distintos_, _Operadores iguais_, _Operadores no mesmo turno_.
