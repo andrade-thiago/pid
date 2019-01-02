@@ -5,7 +5,7 @@ O primeiro passo é a criação da estrutura do projeto seguindo os seguintes pa
 2. Associar fases de forma ordenada ao projeto criado utilizando a camada _fase_.
 3. Adicionar subfases a cada fase associada ao projeto utilizando a camada _subfase_. Subfases devem ser ordenadas dentro de uma fase.
 4. Associar etapas as subfases criadas utilizando a camada _etapa_. Etapas devem ser ordenadas dentro de uma subfase.
-5. Definir restrições entre as etapas criadas. As restrições devem ser entre etapas de uma mesma subfase.
+5. Definir restrições entre as etapas criadas. As restrições devem ser entre etapas de uma mesma subfase. Atentar para cadastrar etapas que ocorrem primeiro em _etapa id anterior_.
 
 # Criação das Atividades de Trabalho
 
