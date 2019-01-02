@@ -1,13 +1,15 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" V:\AC_Diniz\SAP\insumo.fmw
+#        "C:\Program Files\FME\fme.exe" E:\DINIZ\3_Desenvolvimento\sap.wiki\fme\insumo.fmw
 #              --SourceDataset_ECW ""
 #              --DestDataset_POSTGIS "sap"
 #              --HOST_POSTGIS ""
 #              --PORT_POSTGIS "5432"
 #              --USER_NAME_POSTGIS "controle_app"
 #              --PASSWORD_POSTGIS "********"
+#              --DEF_VAL ""
+#              --DEF_VAL_2 ""
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -22,8 +24,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18547"
-#!   FME_DOCUMENT_GUID="cc460d19-25bf-4a5d-82f6-1f9a25bcf578"
-#!   FME_DOCUMENT_PRIORGUID="3d59e5a2-9255-4d48-894b-2be689f201ab,6dea8b51-7ada-42c3-a3e7-6ede3628477a,9b7859c6-594c-46d3-8915-6365a27347f8"
+#!   FME_DOCUMENT_GUID="3b7b52d7-7b29-4bf5-92be-d1c284d582a1"
+#!   FME_DOCUMENT_PRIORGUID="3d59e5a2-9255-4d48-894b-2be689f201ab,6dea8b51-7ada-42c3-a3e7-6ede3628477a,9b7859c6-594c-46d3-8915-6365a27347f8,cc460d19-25bf-4a5d-82f6-1f9a25bcf578"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -32,7 +34,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.1.0.2 (20180903 - Build 18547 - WIN64)"
-#!   LAST_SAVE_DATE="2018-12-31T11:03:07"
+#!   LAST_SAVE_DATE="2019-01-02T08:32:36"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -50,7 +52,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-343.444 247.527"
+#!   VIEW_POSITION="-349.632 266.092"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="101"
@@ -69,7 +71,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_geometry char(50) fme_start_angle float fme_sweep_angle float fme_primary_axis float multi_reader_type char(50) fme_dataset char(50) ecw_pyramid_level{}.num_columns integer fme_secondary_axis float multi_reader_keyword char(50) ecw_pyramid_level{}.num_rows integer fme_basename char(50) fme_feature_type char(50) multi_reader_full_id integer fme_text_size float ecw_type char(255) fme_fill_color char(50) fme_rotation float fme_type char(50) fme_color char(50) multi_reader_id integer ecw_pyramid_num_levels integer"
+#!   EXPOSABLE_ATTRS="multi_reader_full_id integer ecw_pyramid_level{}.num_columns integer fme_type char(50) fme_dataset char(50) fme_geometry char(50) fme_primary_axis float fme_start_angle float fme_feature_type char(50) fme_text_size float multi_reader_keyword char(50) fme_secondary_axis float ecw_pyramid_num_levels integer fme_color char(50) fme_sweep_angle float ecw_type char(255) multi_reader_id integer fme_fill_color char(50) fme_basename char(50) multi_reader_type char(50) fme_text_string char(50) fme_rotation float ecw_pyramid_level{}.num_rows integer"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -131,7 +133,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_type postgis_geometry postgis_mode &quot;&quot; postgis_sql_key_columns &quot;&quot; postgis_drop_table &quot;&quot; postgis_truncate_table &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES postgis_create_with_oids NO postgis_create_gist_index YES postgis_spatial_column_type geometry postgis_spatial_column geom postgis_srid &quot;&quot; postgis_vacuum_analyze no postgis_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_geometry char(50) fme_start_angle float8 fme_sweep_angle float8 fme_primary_axis float8 fme_dataset char(50) fme_secondary_axis float8 fme_basename char(50) fme_feature_type char(50) postgis_collection_id int4 fme_db_operation char(8) fme_text_size float8 fme_type char(50) fme_fill_color char(50) fme_rotation float8 postgis_type char(50) fme_color char(50) postgis_collection_part_id int4"
+#!   EXPOSABLE_ATTRS="fme_db_operation char(8) fme_type char(50) fme_dataset char(50) postgis_collection_part_id int4 fme_geometry char(50) fme_primary_axis float8 fme_start_angle float8 fme_feature_type char(50) fme_text_size float8 postgis_collection_id int4 fme_secondary_axis float8 fme_color char(50) fme_sweep_angle float8 postgis_type char(50) fme_fill_color char(50) fme_basename char(50) fme_rotation float8 fme_text_string char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgis_create_with_oids%postgis_create_gist_index Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgis_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgis_create_gist_index YES%NO Create GiST Index&quot; YES &quot;GUI OPTIONAL NAMEDGROUP fme_spatial_group postgis_spatial_column_type%postgis_spatial_column%postgis_srid Spatial&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE postgis_spatial_column_type Geometry,geometry%Geography,geography Spatial Type&quot; geometry &quot;GUI OPTIONAL WHOLE_LINE TEXT postgis_spatial_column Spatial Column&quot; geom &quot;GUI OPTIONAL FLOAT postgis_srid Spatial Column SRID&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgis_vacuum_analyze%postgis_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgis_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgis_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -880,6 +882,16 @@
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_MULTI_FEATURE_OR_ATTR DEF_VAL &quot; &quot; tipo_insumo_id:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_MULTI_FEATURE_OR_ATTR DEF_VAL_2 &quot; &quot; epsg_insumo:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
@@ -911,20 +923,6 @@
 #!   ANCHORED_NODE="3"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="17"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Reprojeção para 4674&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="1084.7363348881015 -0.94702689601149359"
-#!   TOP_LEFT="1084.7363348881015 -0.94702689601149359"
-#!   BOTTOM_RIGHT="1514.7363348881015 0.052973103988506409"
-#!   BOUNDING_RECT="1084.7363348881015 -0.94702689601149359 430 -1"
-#!   ORDER="500000000000016"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="13"
-#! />
-#! <COMMENT
 #!   IDENTIFIER="18"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Criação dos atributos necessários da camada insumo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="1728.7684112484683 42.803410608363549"
@@ -951,6 +949,20 @@
 #!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="8"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="24"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Reprojeção para 4674&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1157.9425124944323 -54.947026896011494"
+#!   TOP_LEFT="1157.9425124944323 -54.947026896011494"
+#!   BOTTOM_RIGHT="1587.9425124944323 -53.947026896011494"
+#!   BOUNDING_RECT="1157.9425124944323 -54.947026896011494 430 -1"
+#!   ORDER="500000000000020"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="21"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -980,31 +992,6 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BoundingBoxReplacer"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="13"
-#!   TYPE="Reprojector"
-#!   VERSION="4"
-#!   POSITION="1108.7363348881015 -178.4481519072616"
-#!   BOUNDING_RECT="1108.7363348881015 -178.4481519072616 -1 -1"
-#!   ORDER="500000000000011"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18567"
-#! >
-#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4674"/>
-#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_TOLERANCE" PARM_VALUE="0.0"/>
-#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:31982"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="10"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
@@ -1013,7 +1000,7 @@
 #!   ORDER="500000000000013"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18567"
+#!   LAST_PARM_EDIT="18547"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1025,7 +1012,7 @@
 #!     <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; nome SET_TO &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt;  caminho SET_TO &lt;at&gt;Value&lt;openparen&gt;fme_dataset&lt;closeparen&gt;  epsg SET_TO 31982  tipo_insumo_id SET_TO 1"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; nome SET_TO &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt;  caminho SET_TO &lt;at&gt;Value&lt;openparen&gt;fme_dataset&lt;closeparen&gt;  epsg SET_TO $(DEF_VAL_2)  tipo_insumo_id SET_TO $(DEF_VAL)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1033,6 +1020,31 @@
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="1181.9425124944323 -232.4481519072616"
+#!   BOUNDING_RECT="1181.9425124944323 -232.4481519072616 -1 -1"
+#!   ORDER="500000000000019"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4674"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_TOLERANCE" PARM_VALUE="0.0"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="Read from feature"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector_2"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1048,9 +1060,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="14"
+#!   IDENTIFIER="25"
 #!   SOURCE_NODE="3"
-#!   TARGET_NODE="13"
+#!   TARGET_NODE="21"
 #!   SOURCE_PORT_DESC="fo 0 BOX"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1070,8 +1082,8 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="11"
-#!   SOURCE_NODE="13"
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="21"
 #!   TARGET_NODE="10"
 #!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
 #!   TARGET_PORT_DESC="fi 0 "
@@ -1105,11 +1117,17 @@ DEFAULT_MACRO USER_NAME_POSTGIS controle_app
 GUI TEXT USER_NAME_POSTGIS Usuário de acesso ao SAP:
 DEFAULT_MACRO PASSWORD_POSTGIS 
 GUI OPTIONAL PASSWORD_ENCODED PASSWORD_POSTGIS Senha do usuário do SAP:
+DEFAULT_MACRO DEF_VAL 
+GUI TEXT_EDIT_OR_NUM_MULTI_FEATURE DEF_VAL " " tipo_insumo_id:
+DEFAULT_MACRO DEF_VAL_2 
+GUI TEXT_EDIT_OR_NUM_MULTI_FEATURE DEF_VAL_2 " " epsg_insumo:
 INCLUDE [ if {{$(SourceDataset_ECW)} == {}} { puts_real {Parameter 'SourceDataset_ECW' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_POSTGIS)} == {}} { puts_real {Parameter 'DestDataset_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(HOST_POSTGIS)} == {}} { puts_real {Parameter 'HOST_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(PORT_POSTGIS)} == {}} { puts_real {Parameter 'PORT_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(USER_NAME_POSTGIS)} == {}} { puts_real {Parameter 'USER_NAME_POSTGIS' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DEF_VAL)} == {}} { puts_real {Parameter 'DEF_VAL' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DEF_VAL_2)} == {}} { puts_real {Parameter 'DEF_VAL_2' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -1294,7 +1312,7 @@ DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_1 POSTGIS_1
 FME_PASSWORD_PARAMETER_LIST PASSWORD_POSTGIS
 # -------------------------------------------------------------------------
 
-ECW_1_READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+ECW_1_READER_META_ATTRIBUTES fme_dataset fme_basename fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -1320,11 +1338,11 @@ INCLUDE [    if { {BB} == {MINBB} } {       puts {MACRO BoundingBoxReplacer_BBFu
 FACTORY_DEF * TeeFactory    FACTORY_NAME BoundingBoxReplacer    INPUT  FEATURE_TYPE ECW_ECW_1    OUTPUT FEATURE_TYPE BoundingBoxReplacer_BOX         $(BoundingBoxReplacer_BBFunc)
 # -------------------------------------------------------------------------
 # Wipe out the source setting if it was untouched from the default setting
-DEFAULT_MACRO Reprojector_SOURCE "EPSG:31982"
-INCLUDE [if { {EPSG:31982} == {Read from feature} } {             puts {MACRO Reprojector_SOURCE}          }         ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector    INPUT  FEATURE_TYPE BoundingBoxReplacer_BOX    OUTPUT FEATURE_TYPE Reprojector_REPROJECTED         @Reproject($(Reprojector_SOURCE),"EPSG:4674",NearestNeighbor,PreserveCells,Reprojector,"COORD_SYS_WARNING",RASTER_TOLERANCE,0.0)
+DEFAULT_MACRO Reprojector_2_SOURCE "Read from feature"
+INCLUDE [if { {Read from feature} == {Read from feature} } {             puts {MACRO Reprojector_2_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector_2    INPUT  FEATURE_TYPE BoundingBoxReplacer_BOX    OUTPUT FEATURE_TYPE Reprojector_2_REPROJECTED         @Reproject($(Reprojector_2_SOURCE),"EPSG:4674",NearestNeighbor,PreserveCells,Reprojector_2,"COORD_SYS_WARNING",RASTER_TOLERANCE,0.0)
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Reprojector_REPROJECTED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "nome" "SET_TO" "<at>Value<openparen>fme_basename<closeparen>" }      ATTR_ACTION { "" "caminho" "SET_TO" "<at>Value<openparen>fme_dataset<closeparen>" }      ATTR_ACTION { "" "epsg" "SET_TO" "31982" }      ATTR_ACTION { "" "tipo_insumo_id" "SET_TO" "1" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Reprojector_2_REPROJECTED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "nome" "SET_TO" "<at>Value<openparen>fme_basename<closeparen>" }      ATTR_ACTION { "" "caminho" "SET_TO" "<at>Value<openparen>fme_dataset<closeparen>" }      ATTR_ACTION { "" "epsg" "SET_TO" "$(DEF_VAL_2)" }      ATTR_ACTION { "" "tipo_insumo_id" "SET_TO" "$(DEF_VAL)" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO POSTGIS __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>macrocontrole.insumo<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
