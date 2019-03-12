@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" E:\DINIZ\3_Desenvolvimento\sap.wiki\fme\etapa.fmw
+#        "C:\Program Files\FME\fme.exe" D:\1_Desenvolvimento\sap.wiki\fme\etapa.fmw
 #              --SourceDataset_POSTGIS "sap"
 #              --HOST_POSTGIS ""
 #              --PORT_POSTGIS "5432"
@@ -16,14 +16,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="5499.55 1497.73"
-#!   DOC_TOP_LEFT="100 -1301.03"
+#!   DOC_EXTENTS="5778.2 1697.16"
+#!   DOC_TOP_LEFT="100 -1500.46"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18547"
-#!   FME_DOCUMENT_GUID="6b6c33fb-2aad-464c-ab7c-246613bf2380"
-#!   FME_DOCUMENT_PRIORGUID="771424ad-e2a4-4f15-87eb-d796d68c9693,a41d5593-50e4-4efa-b1e8-e3e7732d0846,7593cdc4-b654-4daf-b946-3be14de80b52,65de3612-57ad-4b76-85d4-88d43985a928,79e0d13f-e860-437b-8223-e8275ee00ea1"
+#!   FME_BUILD_NUM="18586"
+#!   FME_DOCUMENT_GUID="92977f7f-e6bc-4dbf-a83c-2f8941d0ac07"
+#!   FME_DOCUMENT_PRIORGUID="771424ad-e2a4-4f15-87eb-d796d68c9693,a41d5593-50e4-4efa-b1e8-e3e7732d0846,7593cdc4-b654-4daf-b946-3be14de80b52,65de3612-57ad-4b76-85d4-88d43985a928,79e0d13f-e860-437b-8223-e8275ee00ea1,6b6c33fb-2aad-464c-ab7c-246613bf2380"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -31,8 +31,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.0.2 (20180903 - Build 18547 - WIN64)"
-#!   LAST_SAVE_DATE="2019-01-02T08:34:17"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.1.2 (20190121 - Build 18586 - WIN64)"
+#!   LAST_SAVE_DATE="2019-03-11T20:55:09"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -50,7 +50,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="859.384 256.079"
+#!   VIEW_POSITION="1635.43 197.919"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="72"
@@ -69,7 +69,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_sql_where_clause &quot;&quot; postgis_sql_statement &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="postgis_collection_id int4 fme_text_size float8 fme_rotation float8 multi_reader_keyword char(50) fme_geometry char(50) postgis_type char(50) multi_reader_full_id int4 fme_start_angle float8 fme_dataset char(50) fme_feature_type char(50) fme_secondary_axis float8 fme_sweep_angle float8 fme_text_string char(50) postgis_collection_part_id int4 postgres_oid int4 multi_reader_id int4 fme_fill_color char(50) multi_reader_type char(50) fme_primary_axis float8 fme_type char(50) fme_basename char(50) fme_color char(50)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) multi_reader_full_id int4 fme_start_angle float8 fme_fill_color char(50) multi_reader_type char(50) fme_geometry char(50) postgis_type char(50) fme_feature_type char(50) fme_rotation float8 fme_primary_axis float8 postgres_oid int4 fme_dataset char(50) postgis_collection_part_id int4 fme_sweep_angle float8 fme_basename char(50) fme_text_string char(50) multi_reader_id int4 fme_text_size float8 fme_secondary_axis float8 fme_type char(50) multi_reader_keyword char(50) postgis_collection_id int4"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP postgis_query_settings_group postgis_sql_where_clause%postgis_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_where_clause MODE,WHERE;FORMAT,POSTGIS WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_statement MODE,SQL;FORMAT,POSTGIS SELECT Statement&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -135,7 +135,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_where_clause &quot;&quot; postgres_sql_statement &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_size float8 fme_rotation float8 multi_reader_keyword char(50) fme_geometry char(50) multi_reader_full_id int4 fme_start_angle float8 fme_dataset char(50) fme_feature_type char(50) fme_secondary_axis float8 fme_sweep_angle float8 fme_text_string char(50) postgres_type char(50) postgres_oid int4 multi_reader_id int4 fme_fill_color char(50) multi_reader_type char(50) fme_primary_axis float8 fme_type char(50) fme_basename char(50) fme_color char(50)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) multi_reader_full_id int4 fme_start_angle float8 fme_fill_color char(50) multi_reader_type char(50) fme_geometry char(50) fme_feature_type char(50) fme_rotation float8 fme_primary_axis float8 postgres_oid int4 fme_dataset char(50) fme_sweep_angle float8 fme_basename char(50) fme_text_string char(50) multi_reader_id int4 fme_text_size float8 fme_secondary_axis float8 fme_type char(50) postgres_type char(50) multi_reader_keyword char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP postgres_query_settings_group postgres_sql_where_clause%postgres_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgres_sql_where_clause MODE,WHERE;FORMAT,POSTGRES WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgres_sql_statement MODE,SQL;FORMAT,POSTGRES SELECT Statement&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -205,7 +205,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_key_columns &quot;&quot; postgres_drop_table &quot;&quot; postgres_truncate_table &quot;&quot; postgres_mode &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="postgres_type char(50) fme_sweep_angle float8 fme_rotation float8 fme_type char(50) fme_start_angle float8 fme_fill_color char(50) fme_color char(50) fme_basename char(50) fme_primary_axis float8 fme_secondary_axis float8 fme_text_size float8 fme_db_operation char(8) fme_feature_type char(50) fme_text_string char(50) fme_dataset char(50) fme_geometry char(50)"
+#!   EXPOSABLE_ATTRS="fme_type char(50) fme_start_angle float8 fme_text_size float8 fme_dataset char(50) fme_fill_color char(50) fme_secondary_axis float8 fme_basename char(50) fme_db_operation char(8) fme_feature_type char(50) fme_text_string char(50) fme_primary_axis float8 fme_color char(50) fme_geometry char(50) postgres_type char(50) fme_sweep_angle float8 fme_rotation float8"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgres_create_with_oids Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgres_vacuum_analyze%postgres_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -1203,8 +1203,8 @@
 #!   FEAT_GEOMTYPE="postgis_polygon"
 #!   POSITION="100 -235"
 #!   BOUNDING_RECT="100 -235 828.13428134281344 71"
-#!   ORDER="500000000000000"
-#!   COLLAPSED="true"
+#!   ORDER="500000000000042"
+#!   COLLAPSED="false"
 #!   KEYWORD="POSTGIS_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1215,7 +1215,7 @@
 #!   MERGE_FILTER_CASE_SENSITIVE="true"
 #!   DYNAMIC_SCHEMA="false"
 #! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="serial,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int4,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="nome" ATTR_TYPE="varchar(255),PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="epsg" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="banco_dados_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -1229,28 +1229,29 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="execucao_etapa"
+#!   NODE_NAME="atividade"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="macrocontrole"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="3"
+#!   IDENTIFIER="31"
 #!   FEAT_GEOMTYPE="postgres_none"
-#!   POSITION="4811.1721272768273 -644.05320664317719"
-#!   BOUNDING_RECT="4811.1721272768273 -644.05320664317719 788.37734377343759 71"
-#!   ORDER="500000000000023"
+#!   POSITION="5017.2185766302091 -810.06186117416746"
+#!   BOUNDING_RECT="5017.2185766302091 -810.06186117416746 860.97951423958784 71"
+#!   ORDER="500000000000043"
 #!   COLLAPSED="false"
 #!   KEYWORD="POSTGRES_2"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
 #! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="serial,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="etapa_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int4,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="etapa_id" ATTR_TYPE="int4,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="unidade_trabalho_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="operador_atual" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usuario_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="tipo_situacao_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="data_inicio" ATTR_TYPE="timestamptz" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="data_fim" ATTR_TYPE="timestamptz" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="observacao" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_advanced_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
@@ -1267,15 +1268,15 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="true"
-#!   NODE_NAME="execucao_etapa"
+#!   NODE_NAME="atividade"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="macrocontrole"
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="22"
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="27"
 #!   FEAT_GEOMTYPE="postgres_none"
-#!   POSITION="3005.1812272289394 -1230.0270886042194"
-#!   BOUNDING_RECT="3005.1812272289394 -1230.0270886042194 775.89395018950188 71"
-#!   ORDER="500000000000000"
+#!   POSITION="3005.1812272289394 -1429.4563890083346"
+#!   BOUNDING_RECT="3005.1812272289394 -1429.4563890083346 786.52335648356438 71"
+#!   ORDER="500000000000045"
 #!   COLLAPSED="true"
 #!   KEYWORD="POSTGRES_1"
 #!   PARMS_EDITED="false"
@@ -1287,13 +1288,14 @@
 #!   MERGE_FILTER_CASE_SENSITIVE="false"
 #!   DYNAMIC_SCHEMA="false"
 #! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="serial,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="etapa_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int4,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="etapa_id" ATTR_TYPE="int4,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="unidade_trabalho_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="operador_atual" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usuario_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="tipo_situacao_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="data_inicio" ATTR_TYPE="timestamptz" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="data_fim" ATTR_TYPE="timestamptz" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="observacao" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgres_query_settings_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgres_sql_statement" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgres_sql_where_clause" PARM_VALUE=""/>
@@ -1618,9 +1620,10 @@
 #!     <XFORM_ATTR ATTR_NAME="disponivel" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="prioridade" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="operador_atual" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="usuario_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="data_inicio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="data_fim" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="observacao" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="etapa_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1638,20 +1641,22 @@
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="etapa_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="unidade_trabalho_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="operador_atual" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="usuario_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_situacao_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="data_inicio" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="data_fim" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="observacao" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <OUTPUT_FEAT NAME="UNUSED_SUPPLIER"/>
 #!     <FEAT_COLLAPSED COLLAPSED="3"/>
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="etapa_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="unidade_trabalho_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="operador_atual" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="usuario_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_situacao_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="data_inicio" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="data_fim" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="observacao" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
 #!     <XFORM_ATTR ATTR_NAME="etapa_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1665,9 +1670,10 @@
 #!     <XFORM_ATTR ATTR_NAME="disponivel" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="prioridade" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="operador_atual" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="usuario_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="data_inicio" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="data_fim" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="observacao" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Supplier"/>
@@ -1708,7 +1714,7 @@
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="28"
-#!   SOURCE_NODE="22"
+#!   SOURCE_NODE="27"
 #!   TARGET_NODE="23"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 1 SUPPLIER"
@@ -1806,9 +1812,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="27"
+#!   IDENTIFIER="33"
 #!   SOURCE_NODE="23"
-#!   TARGET_NODE="3"
+#!   TARGET_NODE="31"
 #!   SOURCE_PORT_DESC="fo 1 UNMERGED_REQUESTOR"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -2086,7 +2092,6 @@ POSTGRES_2_DATASET "$(DestDataset_POSTGRES_2)"
 
 LOG_FILENAME "$(FME_MF_DIR)etapa.log"
 LOG_APPEND NO
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -2116,15 +2121,15 @@ MACRO WORKSPACE_NAME etapa
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE POSTGIS POSTGIS_1::macrocontrole.unidade_trabalho multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.unidade_trabalho ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::macrocontrole.execucao_etapa multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::macrocontrole.execucao_etapa ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.unidade_trabalho EXACT macrocontrole.unidade_trabalho DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen><comma>PrimaryKey,epsg,varchar<openparen>5<closeparen>,banco_dados_id,int4,subfase_id,int4,lote_id,int4,disponivel,bool,prioridade,int4
-POSTGRES_1_MERGE_DEF POSTGRES_1::macrocontrole.execucao_etapa EXACT macrocontrole.execucao_etapa DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,id,serial<comma>PrimaryKey,etapa_id,int4,unidade_trabalho_id,int4,operador_atual,int4,tipo_situacao_id,int4,data_inicio,timestamptz,data_fim,timestamptz
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE POSTGIS POSTGIS_1::macrocontrole.unidade_trabalho multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.unidade_trabalho ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::macrocontrole.atividade multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::macrocontrole.atividade ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.unidade_trabalho EXACT macrocontrole.unidade_trabalho DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,int4<comma>PrimaryKey,nome,varchar<openparen>255<closeparen><comma>PrimaryKey,epsg,varchar<openparen>5<closeparen>,banco_dados_id,int4,subfase_id,int4,lote_id,int4,disponivel,bool,prioridade,int4
+POSTGRES_1_MERGE_DEF POSTGRES_1::macrocontrole.atividade EXACT macrocontrole.atividade DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,id,int4<comma>PrimaryKey,etapa_id,int4<comma>PrimaryKey,unidade_trabalho_id,int4,usuario_id,int4,tipo_situacao_id,int4,data_inicio,timestamptz,data_fim,timestamptz,observacao,text
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "macrocontrole.atividade (POSTGRES_1) Splitter"    INPUT FEATURE_TYPE macrocontrole.atividade    OUTPUT FEATURE_TYPE macrocontrole.atividade_POSTGRES_1
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "macrocontrole.unidade_trabalho (POSTGIS_1) Splitter"    INPUT FEATURE_TYPE macrocontrole.unidade_trabalho    OUTPUT FEATURE_TYPE macrocontrole.unidade_trabalho_POSTGIS_1
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "macrocontrole.execucao_etapa (POSTGRES_1) Splitter"    INPUT FEATURE_TYPE macrocontrole.execucao_etapa    OUTPUT FEATURE_TYPE macrocontrole.execucao_etapa_POSTGRES_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE macrocontrole.unidade_trabalho_POSTGIS_1    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>subfase_id<closeparen>,Tester) = @EvaluateExpression(FDIV,STRING_ENCODED,$(RHS),Tester) ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
@@ -2141,13 +2146,13 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    COMMAND_PAR
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_lQ+3mj5tm0E=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "etapa_id" "SET_TO" "1" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
 # -------------------------------------------------------------------------
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT REFERENCER FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT REFERENCER FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT REFERENCEE FEATURE_TYPE macrocontrole.execucao_etapa_POSTGRES_1    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>etapa_id<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>etapa_id<closeparen>,FeatureMerger) AUTO @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>unidade_trabalho_id<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>unidade_trabalho_id<closeparen>,FeatureMerger) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES NO    REFERENCEES_FIRST No    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE <Unused>    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR
+FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT REFERENCER FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT REFERENCER FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT REFERENCEE FEATURE_TYPE macrocontrole.atividade_POSTGRES_1    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>etapa_id<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>etapa_id<closeparen>,FeatureMerger) AUTO @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>unidade_trabalho_id<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>unidade_trabalho_id<closeparen>,FeatureMerger) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES NO    REFERENCEES_FIRST No    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE <Unused>    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureMerger_UNMERGED_REQUESTOR TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>macrocontrole.execucao_etapa<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureMerger_UNMERGED_REQUESTOR TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>macrocontrole.atividade<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-POSTGRES_2_DEF macrocontrole.execucao_etapa   postgres_type                postgres_none   postgres_sql_key_columns     ""   postgres_drop_table          ""   postgres_truncate_table      ""   postgres_mode                ""   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   fme_selection_method         MATCH_COLUMNS   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id                           serial,PrimaryKey   etapa_id                     int4   unidade_trabalho_id          int4   operador_atual               int4   tipo_situacao_id             int4   data_inicio                  timestamptz   data_fim                     timestamptz
+POSTGRES_2_DEF macrocontrole.atividade   postgres_type                postgres_none   postgres_sql_key_columns     ""   postgres_drop_table          ""   postgres_truncate_table      ""   postgres_mode                ""   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   fme_selection_method         MATCH_COLUMNS   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id                           int4,PrimaryKey   etapa_id                     int4,PrimaryKey   unidade_trabalho_id          int4   usuario_id                   int4   tipo_situacao_id             int4   data_inicio                  timestamptz   data_fim                     timestamptz   observacao                   text

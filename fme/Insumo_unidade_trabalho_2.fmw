@@ -1,13 +1,13 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" "E:\DINIZ\3_Desenvolvimento\sap.wiki\fme\Insumo_unidade_trabalho - Copia.fmw"
+#        "C:\Program Files\FME\fme.exe" D:\1_Desenvolvimento\sap.wiki\fme\Insumo_unidade_trabalho_2.fmw
 #              --SourceDataset_POSTGIS "sap"
 #              --HOST_POSTGIS ""
 #              --PORT_POSTGIS "5432"
 #              --USER_NAME_POSTGIS "controle_app"
 #              --PASSWORD_POSTGIS "********"
-#              --RHS "1"
+#              --RHS ""
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -21,9 +21,9 @@
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18547"
-#!   FME_DOCUMENT_GUID="5f787e64-291d-4fc9-960f-e5b75c10b6fa"
-#!   FME_DOCUMENT_PRIORGUID="12a7771e-2a52-43a5-87d5-5f4684a4a1bf,e5a5a43b-4038-40a1-8a8f-40b3ef7ba801,806ca211-3e8c-40c5-9f08-2aee6bc0c065,b8dac6fb-9579-423b-8e69-22351a6a9fd0"
+#!   FME_BUILD_NUM="18586"
+#!   FME_DOCUMENT_GUID="492bd1b3-2caa-48ea-bb2e-47a67f02e873"
+#!   FME_DOCUMENT_PRIORGUID="12a7771e-2a52-43a5-87d5-5f4684a4a1bf,e5a5a43b-4038-40a1-8a8f-40b3ef7ba801,806ca211-3e8c-40c5-9f08-2aee6bc0c065,b8dac6fb-9579-423b-8e69-22351a6a9fd0,5f787e64-291d-4fc9-960f-e5b75c10b6fa"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -31,8 +31,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.0.2 (20180903 - Build 18547 - WIN64)"
-#!   LAST_SAVE_DATE="2019-01-02T08:38:11"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.1.2 (20190121 - Build 18586 - WIN64)"
+#!   LAST_SAVE_DATE="2019-03-11T21:02:13"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -50,7 +50,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="128.474 232.641"
+#!   VIEW_POSITION="-25.0003 155.557"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="90"
@@ -69,7 +69,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_sql_where_clause &quot;&quot; postgis_sql_statement &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_type char(50) postgres_oid int4 multi_reader_full_id int4 fme_text_string char(50) multi_reader_type char(50) multi_reader_id int4 fme_feature_type char(50) multi_reader_keyword char(50) fme_secondary_axis float8 fme_rotation float8 fme_dataset char(50) fme_color char(50) fme_fill_color char(50) fme_basename char(50) fme_geometry char(50) fme_start_angle float8 postgis_collection_part_id int4 fme_text_size float8 postgis_collection_id int4 fme_sweep_angle float8 fme_primary_axis float8 postgis_type char(50)"
+#!   EXPOSABLE_ATTRS="postgis_collection_id int4 fme_start_angle float8 fme_secondary_axis float8 fme_feature_type char(50) fme_sweep_angle float8 multi_reader_id int4 postgis_collection_part_id int4 multi_reader_keyword char(50) fme_color char(50) postgis_type char(50) postgres_oid int4 fme_basename char(50) fme_fill_color char(50) fme_type char(50) fme_text_size float8 fme_rotation float8 multi_reader_full_id int4 multi_reader_type char(50) fme_dataset char(50) fme_text_string char(50) fme_geometry char(50) fme_primary_axis float8"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP postgis_query_settings_group postgis_sql_where_clause%postgis_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_where_clause MODE,WHERE;FORMAT,POSTGIS WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_statement MODE,SQL;FORMAT,POSTGIS SELECT Statement&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -135,7 +135,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_key_columns &quot;&quot; postgres_drop_table &quot;&quot; postgres_truncate_table &quot;&quot; postgres_mode &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_secondary_axis float8 fme_color char(50) fme_basename char(50) fme_dataset char(50) postgres_type char(50) fme_geometry char(50) fme_text_string char(50) fme_text_size float8 fme_start_angle float8 fme_type char(50) fme_fill_color char(50) fme_primary_axis float8 fme_feature_type char(50) fme_rotation float8 fme_db_operation char(8) fme_sweep_angle float8"
+#!   EXPOSABLE_ATTRS="fme_primary_axis float8 fme_feature_type char(50) fme_text_size float8 fme_basename char(50) fme_secondary_axis float8 fme_color char(50) fme_fill_color char(50) fme_db_operation char(8) fme_sweep_angle float8 postgres_type char(50) fme_dataset char(50) fme_text_string char(50) fme_geometry char(50) fme_rotation float8 fme_start_angle float8 fme_type char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgres_create_with_oids Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgres_vacuum_analyze%postgres_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -862,6 +862,7 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="caminho" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="epsg" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="tipo_insumo_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="grupo_insumo_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgis_query_settings_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgis_sql_statement" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgis_sql_where_clause" PARM_VALUE=""/>
@@ -964,8 +965,8 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR RHS FME_SUPPORTSNUMERIC%YES tipo_insumo_id:"
-#!   DEFAULT_VALUE="1"
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR RHS FME_SUPPORTSNUMERIC%YES grupo_insumo_id:"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -985,7 +986,7 @@
 #!   ORDER="500000000000034"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18547"
+#!   LAST_PARM_EDIT="18586"
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -994,6 +995,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1001,9 +1003,10 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;tipo_insumo_id&lt;closeparen&gt; = $(RHS)"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;grupo_insumo_id&lt;closeparen&gt; = $(RHS)"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
@@ -1026,6 +1029,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="id insumo_id RENAME_SET_DEFAULT "/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -1092,6 +1096,7 @@
 #!     <XFORM_ATTR ATTR_NAME="insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_predicate" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
@@ -1100,6 +1105,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
 #!     <XFORM_ATTR ATTR_NAME="unidade_trabalho_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1113,6 +1119,7 @@
 #!     <XFORM_ATTR ATTR_NAME="insumo_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="YES"/>
@@ -1261,8 +1268,8 @@ DEFAULT_MACRO USER_NAME_POSTGIS controle_app
 GUI TEXT USER_NAME_POSTGIS Usuario banco de dados SAP:
 DEFAULT_MACRO PASSWORD_POSTGIS 
 GUI PASSWORD_ENCODED PASSWORD_POSTGIS Senha usuário banco de dados SAP:
-DEFAULT_MACRO RHS 1
-GUI TEXT_EDIT RHS FME_SUPPORTSNUMERIC%YES tipo_insumo_id:
+DEFAULT_MACRO RHS 
+GUI TEXT_EDIT RHS FME_SUPPORTSNUMERIC%YES grupo_insumo_id:
 INCLUDE [ if {{$(SourceDataset_POSTGIS)} == {}} { puts_real {Parameter 'SourceDataset_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(HOST_POSTGIS)} == {}} { puts_real {Parameter 'HOST_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(PORT_POSTGIS)} == {}} { puts_real {Parameter 'PORT_POSTGIS' must be given a value.}; exit 1; }; ]
@@ -1442,9 +1449,8 @@ POSTGRES_1_DATASET "$(DestDataset_POSTGRES_1)"
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)Insumo_unidade_trabalho - Copia.log"
+LOG_FILENAME "$(FME_MF_DIR)Insumo_unidade_trabalho_2.log"
 LOG_APPEND NO
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -1465,13 +1471,13 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME Insumo_unidade_trabalho - Copia
+MACRO WORKSPACE_NAME Insumo_unidade_trabalho_2
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_POSTGIS_1)   INPUT FEATURE_TYPE *    ROUTE POSTGIS POSTGIS_1::macrocontrole.insumo multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.insumo ALIAS_GEOMETRY    ROUTE POSTGIS POSTGIS_1::macrocontrole.unidade_trabalho multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.unidade_trabalho ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.insumo EXACT macrocontrole.insumo DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen>,caminho,varchar<openparen>255<closeparen>,epsg,varchar<openparen>5<closeparen>,tipo_insumo_id,int4
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_POSTGIS_1)   INPUT FEATURE_TYPE *    ROUTE POSTGIS POSTGIS_1::macrocontrole.unidade_trabalho multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.unidade_trabalho ALIAS_GEOMETRY    ROUTE POSTGIS POSTGIS_1::macrocontrole.insumo multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.insumo ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.unidade_trabalho EXACT macrocontrole.unidade_trabalho DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen><comma>PrimaryKey,epsg,varchar<openparen>5<closeparen>,banco_dados_id,int4,subfase_id,int4,lote_id,int4,disponivel,bool,prioridade,int4
+POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.insumo EXACT macrocontrole.insumo DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen>,caminho,varchar<openparen>255<closeparen>,epsg,varchar<openparen>5<closeparen>,tipo_insumo_id,int4,grupo_insumo_id,int4
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "macrocontrole.insumo (POSTGIS_1) Splitter"    INPUT FEATURE_TYPE macrocontrole.insumo    OUTPUT FEATURE_TYPE macrocontrole.insumo_POSTGIS_1
@@ -1487,7 +1493,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME CenterPointReplacer    INPUT  FEATURE_T
 FACTORY_DEF * TestFactory    FACTORY_NAME CenterPointReplacer_router    INPUT FEATURE_TYPE __TO_TEST__    TEST &__temp_x__ == ""    OUTPUT FAILED FEATURE_TYPE CenterPointReplacer_POINT         @XValue(&__temp_x__,RESET)         @YValue(&__temp_y__)         @ZValue(&__temp_z__)         @GeometryType(fme_point)         @RemoveAttributes(__temp_x__,__temp_y__,__temp_z__)
 FACTORY_DEF * TestFactory    FACTORY_NAME CenterPointReplacer_outputter    INPUT FEATURE_TYPE __TO_OUTPUT__    TEST @Tcl2("FME_AttributeExists fme_untouched") != 0    OUTPUT FAILED FEATURE_TYPE CenterPointReplacer_POINT
 # -------------------------------------------------------------------------
-FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE macrocontrole.insumo_POSTGIS_1    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>tipo_insumo_id<closeparen>,Tester) = @EvaluateExpression(FDIV,STRING_ENCODED,$(RHS),Tester) ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE macrocontrole.insumo_POSTGIS_1    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>grupo_insumo_id<closeparen>,Tester) = @EvaluateExpression(FDIV,STRING_ENCODED,$(RHS),Tester) ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE Tester_PASSED 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "id" "insumo_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT
 # -------------------------------------------------------------------------

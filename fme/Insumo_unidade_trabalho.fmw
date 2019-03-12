@@ -1,13 +1,13 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" E:\DINIZ\3_Desenvolvimento\sap.wiki\fme\Insumo_unidade_trabalho.fmw
+#        "C:\Program Files\FME\fme.exe" D:\1_Desenvolvimento\sap.wiki\fme\Insumo_unidade_trabalho.fmw
 #              --SourceDataset_POSTGIS "sap"
 #              --HOST_POSTGIS ""
 #              --PORT_POSTGIS "5432"
 #              --USER_NAME_POSTGIS "controle_app"
 #              --PASSWORD_POSTGIS "********"
-#              --RHS "1"
+#              --RHS ""
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -16,14 +16,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="3567.41 1216.09"
-#!   DOC_TOP_LEFT="100 -1005.26"
+#!   DOC_EXTENTS="3822.97 1475.82"
+#!   DOC_TOP_LEFT="49.9995 -1119.15"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18547"
-#!   FME_DOCUMENT_GUID="b8dac6fb-9579-423b-8e69-22351a6a9fd0"
-#!   FME_DOCUMENT_PRIORGUID="12a7771e-2a52-43a5-87d5-5f4684a4a1bf,e5a5a43b-4038-40a1-8a8f-40b3ef7ba801,806ca211-3e8c-40c5-9f08-2aee6bc0c065"
+#!   FME_BUILD_NUM="18586"
+#!   FME_DOCUMENT_GUID="3d1a8924-3201-4083-b471-f45bfdaad41a"
+#!   FME_DOCUMENT_PRIORGUID="12a7771e-2a52-43a5-87d5-5f4684a4a1bf,e5a5a43b-4038-40a1-8a8f-40b3ef7ba801,806ca211-3e8c-40c5-9f08-2aee6bc0c065,b8dac6fb-9579-423b-8e69-22351a6a9fd0,b866f4dc-806c-4745-8829-b06b1f4549b4"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -31,8 +31,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.0.2 (20180903 - Build 18547 - WIN64)"
-#!   LAST_SAVE_DATE="2019-01-02T08:36:57"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.1.2 (20190121 - Build 18586 - WIN64)"
+#!   LAST_SAVE_DATE="2019-03-11T21:03:01"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -50,7 +50,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="0 211.808"
+#!   VIEW_POSITION="16.6668 563.895"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="90"
@@ -69,7 +69,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_sql_where_clause &quot;&quot; postgis_sql_statement &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_geometry char(50) multi_reader_keyword char(50) fme_rotation float8 multi_reader_full_id int4 fme_fill_color char(50) fme_start_angle float8 fme_text_size float8 multi_reader_id int4 postgis_collection_id int4 multi_reader_type char(50) fme_sweep_angle float8 fme_secondary_axis float8 postgis_type char(50) postgis_collection_part_id int4 fme_basename char(50) fme_feature_type char(50) fme_text_string char(50) postgres_oid int4 fme_primary_axis float8 fme_color char(50) fme_type char(50) fme_dataset char(50)"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis float8 fme_primary_axis float8 multi_reader_type char(50) postgis_collection_part_id int4 multi_reader_keyword char(50) fme_dataset char(50) fme_color char(50) fme_feature_type char(50) multi_reader_full_id int4 postgres_oid int4 fme_start_angle float8 fme_rotation float8 fme_text_size float8 fme_fill_color char(50) fme_geometry char(50) postgis_type char(50) fme_basename char(50) multi_reader_id int4 fme_sweep_angle float8 postgis_collection_id int4 fme_text_string char(50) fme_type char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP postgis_query_settings_group postgis_sql_where_clause%postgis_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_where_clause MODE,WHERE;FORMAT,POSTGIS WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_statement MODE,SQL;FORMAT,POSTGIS SELECT Statement&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -135,7 +135,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_key_columns &quot;&quot; postgres_drop_table &quot;&quot; postgres_truncate_table &quot;&quot; postgres_mode &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_dataset char(50) fme_feature_type char(50) fme_type char(50) fme_fill_color char(50) fme_rotation float8 fme_db_operation char(8) fme_start_angle float8 fme_geometry char(50) fme_primary_axis float8 postgres_type char(50) fme_secondary_axis float8 fme_basename char(50) fme_sweep_angle float8 fme_color char(50) fme_text_string char(50) fme_text_size float8"
+#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_type char(50) fme_basename char(50) postgres_type char(50) fme_dataset char(50) fme_geometry char(50) fme_secondary_axis float8 fme_color char(50) fme_feature_type char(50) fme_fill_color char(50) fme_primary_axis float8 fme_text_size float8 fme_start_angle float8 fme_db_operation char(8) fme_sweep_angle float8 fme_rotation float8"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgres_create_with_oids Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgres_vacuum_analyze%postgres_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -862,6 +862,7 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="caminho" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="epsg" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="tipo_insumo_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="grupo_insumo_id" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgis_query_settings_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgis_sql_statement" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="postgis_sql_where_clause" PARM_VALUE=""/>
@@ -874,8 +875,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="3"
 #!   FEAT_GEOMTYPE="postgis_polygon"
-#!   POSITION="100 -934.25556255562549"
-#!   BOUNDING_RECT="100 -934.25556255562549 831.25931259312597 71"
+#!   POSITION="49.999499994999951 -1048.1455903447923"
+#!   BOUNDING_RECT="49.999499994999951 -1048.1455903447923 831.25931259312597 71"
 #!   ORDER="500000000000018"
 #!   COLLAPSED="false"
 #!   KEYWORD="POSTGIS_1"
@@ -908,8 +909,8 @@
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="4"
 #!   FEAT_GEOMTYPE="postgres_none"
-#!   POSITION="2763.4085940859386 -569.03111808895824"
-#!   BOUNDING_RECT="2763.4085940859386 -569.03111808895824 904.00350003500034 71"
+#!   POSITION="2968.966205217605 -499.58597919312467"
+#!   BOUNDING_RECT="2968.966205217605 -499.58597919312467 904.00350003500034 71"
 #!   ORDER="500000000000016"
 #!   COLLAPSED="false"
 #!   KEYWORD="POSTGRES_1"
@@ -964,8 +965,8 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR RHS FME_SUPPORTSNUMERIC%YES tipo_insumo_id:"
-#!   DEFAULT_VALUE="1"
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR RHS FME_SUPPORTSNUMERIC%YES grupo_insumo_id:"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -973,10 +974,10 @@
 #! <COMMENT
 #!   IDENTIFIER="20"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Editar de forma ao nome ficar correspondente coma unidade de trabalho&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="2430.6164794981287 210.83654169875038"
-#!   TOP_LEFT="2430.6164794981287 210.83654169875038"
-#!   BOTTOM_RIGHT="2860.6164794981287 211.83654169875038"
-#!   BOUNDING_RECT="2430.6164794981287 210.83654169875038 430 -1"
+#!   POSITION="2291.7262017064627 356.67133338000053"
+#!   TOP_LEFT="2291.7262017064627 356.67133338000053"
+#!   BOTTOM_RIGHT="2721.7262017064627 357.67133338000053"
+#!   BOUNDING_RECT="2291.7262017064627 356.67133338000053 430 -1"
 #!   ORDER="500000000000035"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -994,8 +995,8 @@
 #!   IDENTIFIER="5"
 #!   TYPE="AttributeRenamer"
 #!   VERSION="4"
-#!   POSITION="1554.0100001000005 -12.081104144374734"
-#!   BOUNDING_RECT="1554.0100001000005 -12.081104144374734 -1 -1"
+#!   POSITION="1626.2329445516673 47.918895855625266"
+#!   BOUNDING_RECT="1626.2329445516673 47.918895855625266 -1 -1"
 #!   ORDER="500000000000019"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1008,6 +1009,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="id insumo_id RENAME_SET_DEFAULT "/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -1043,8 +1045,8 @@
 #!   IDENTIFIER="9"
 #!   TYPE="StringReplacer"
 #!   VERSION="4"
-#!   POSITION="2454.6164794981287 -97.915895825624858"
-#!   BOUNDING_RECT="2454.6164794981287 -97.915895825624858 -1 -1"
+#!   POSITION="2315.7262017064627 47.918895855625266"
+#!   BOUNDING_RECT="2315.7262017064627 47.918895855625266 -1 -1"
 #!   ORDER="500000000000020"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1057,6 +1059,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="Ortoimagem_MI_"/>
 #!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
@@ -1125,6 +1128,7 @@
 #!     <XFORM_ATTR ATTR_NAME="insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="unidade_trabalho_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1143,6 +1147,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <OUTPUT_FEAT NAME="UNUSED_SUPPLIER"/>
 #!     <FEAT_COLLAPSED COLLAPSED="3"/>
@@ -1151,6 +1156,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
 #!     <XFORM_ATTR ATTR_NAME="unidade_trabalho_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1165,6 +1171,7 @@
 #!     <XFORM_ATTR ATTR_NAME="insumo_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Supplier"/>
@@ -1199,7 +1206,7 @@
 #!   ORDER="500000000000034"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18547"
+#!   LAST_PARM_EDIT="18586"
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1208,6 +1215,7 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1215,9 +1223,10 @@
 #!     <XFORM_ATTR ATTR_NAME="caminho" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="epsg" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="tipo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="grupo_insumo_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;tipo_insumo_id&lt;closeparen&gt; = $(RHS)"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;grupo_insumo_id&lt;closeparen&gt; = $(RHS)"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
@@ -1335,8 +1344,8 @@ DEFAULT_MACRO USER_NAME_POSTGIS controle_app
 GUI TEXT USER_NAME_POSTGIS Usuario banco de dados SAP:
 DEFAULT_MACRO PASSWORD_POSTGIS 
 GUI PASSWORD_ENCODED PASSWORD_POSTGIS Senha usuário banco de dados SAP:
-DEFAULT_MACRO RHS 1
-GUI TEXT_EDIT RHS FME_SUPPORTSNUMERIC%YES tipo_insumo_id:
+DEFAULT_MACRO RHS 
+GUI TEXT_EDIT RHS FME_SUPPORTSNUMERIC%YES grupo_insumo_id:
 INCLUDE [ if {{$(SourceDataset_POSTGIS)} == {}} { puts_real {Parameter 'SourceDataset_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(HOST_POSTGIS)} == {}} { puts_real {Parameter 'HOST_POSTGIS' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(PORT_POSTGIS)} == {}} { puts_real {Parameter 'PORT_POSTGIS' must be given a value.}; exit 1; }; ]
@@ -1518,7 +1527,6 @@ POSTGRES_1_DATASET "$(DestDataset_POSTGRES_1)"
 
 LOG_FILENAME "$(FME_MF_DIR)Insumo_unidade_trabalho.log"
 LOG_APPEND NO
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -1544,7 +1552,7 @@ MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_POSTGIS_1)   INPUT FEATURE_TYPE *    ROUTE POSTGIS POSTGIS_1::macrocontrole.insumo multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.insumo ALIAS_GEOMETRY    ROUTE POSTGIS POSTGIS_1::macrocontrole.unidade_trabalho multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_1) TO FME_GENERIC ::macrocontrole.unidade_trabalho ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.insumo EXACT macrocontrole.insumo DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen>,caminho,varchar<openparen>255<closeparen>,epsg,varchar<openparen>5<closeparen>,tipo_insumo_id,int4
+POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.insumo EXACT macrocontrole.insumo DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen>,caminho,varchar<openparen>255<closeparen>,epsg,varchar<openparen>5<closeparen>,tipo_insumo_id,int4,grupo_insumo_id,int4
 POSTGIS_1_MERGE_DEF POSTGIS_1::macrocontrole.unidade_trabalho EXACT macrocontrole.unidade_trabalho DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,id,serial<comma>PrimaryKey,nome,varchar<openparen>255<closeparen><comma>PrimaryKey,epsg,varchar<openparen>5<closeparen>,banco_dados_id,int4,subfase_id,int4,lote_id,int4,disponivel,bool,prioridade,int4
 # -------------------------------------------------------------------------
 
@@ -1556,17 +1564,17 @@ DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE macrocontrole.unidade_trabalho_POSTGIS_1 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "id" "unidade_trabalho_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT
 # -------------------------------------------------------------------------
-Tcl2 set AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitDelim [FME_DecodeText {_}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitDelim]] }      {         set AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitWidths [split [regsub -all {s$} {_} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {nome}]];            set attrNum 0;            set listName [FME_DecodeText {_list}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitDelim;            set delim [set AttributeSplitter_648dba82_4164_4cf9_b663_02aa3438c5de1_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {nome}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {_list}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
+Tcl2 set AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitDelim [FME_DecodeText {_}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitDelim]] }      {         set AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitWidths [split [regsub -all {s$} {_} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {nome}]];            set attrNum 0;            set listName [FME_DecodeText {_list}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitDelim;            set delim [set AttributeSplitter_bd21e675_713a_4a4e_996f_cb09006775b01_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {nome}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {_list}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeSplitter_OUTPUT         @Tcl2(AttributeSplitter_doSplit)
 # -------------------------------------------------------------------------
-FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE macrocontrole.insumo_POSTGIS_1    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>tipo_insumo_id<closeparen>,Tester) = @EvaluateExpression(FDIV,STRING_ENCODED,$(RHS),Tester) ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE macrocontrole.insumo_POSTGIS_1    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>grupo_insumo_id<closeparen>,Tester) = @EvaluateExpression(FDIV,STRING_ENCODED,$(RHS),Tester) ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE Tester_PASSED 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "id" "insumo_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_655785c0_14ad_4d8e_97af_58416780ede91_replacer { findText replaceText invalidValue} {     set attrs [split \"nome\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_655785c0_14ad_4d8e_97af_58416780ede91_replacer {Ortoimagem_MI_} {} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_da29edeb_d398_4a38_80d3_31d3a41b412b1_replacer { findText replaceText invalidValue} {     set attrs [split \"nome\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_da29edeb_d398_4a38_80d3_31d3a41b412b1_replacer {Ortoimagem_MI_} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeSplitter_OUTPUT    INPUT REFERENCEE FEATURE_TYPE StringReplacer_OUTPUT    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_list<opencurly>1<closecurly><closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>nome<closeparen>,FeatureMerger) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES NO    REFERENCEES_FIRST No    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE <Unused>    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED
