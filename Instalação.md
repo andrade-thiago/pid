@@ -44,6 +44,8 @@ Executar o comando `npm run dev` para iniciar o serviço. Caso deseje iniciar o 
 
 Os operadores deverão utilizar o plugin [Ferramentas de Produção](https://github.com/1cgeo/Ferramentas_Producao) no QGIS para se comunicar com o SAP.
 
+Para habilitar o download de insumos em ambientes linux, instalar os seguintes pacotes: smbc, python-smbc e python3-smbc.
+
 O plugin habilita um único botão no QGIS, que ao usuário clicar abre a tela do login. Basta o usuário preencher o endereço do serviço do SAP, seu usuário e senha do banco de dados PostgreSQL.
 
 [[/images/login.PNG|Login]]
